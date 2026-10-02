@@ -10,14 +10,14 @@ plain-text `I'm a teapot` body.
 2. Compile using the project-local Arduino CLI:
 
    ```powershell
-   .\.tools\arduino-cli\arduino-cli.exe compile --config-file .\.arduino\arduino-cli.yaml --fqbn esp32:esp32:esp32c3 --output-dir .\build .
+   .\.tools\arduino-cli\arduino-cli.exe compile --config-file .\.arduino\arduino-cli.yaml --fqbn esp32:esp32:esp32c3:CDCOnBoot=cdc --output-dir .\build .
    ```
 
 3. With the board connected, list serial ports and upload using the port shown:
 
    ```powershell
    .\.tools\arduino-cli\arduino-cli.exe board list --config-file .\.arduino\arduino-cli.yaml
-   .\.tools\arduino-cli\arduino-cli.exe upload --config-file .\.arduino\arduino-cli.yaml --fqbn esp32:esp32:esp32c3 --port COM3 --input-dir .\build .
+   .\.tools\arduino-cli\arduino-cli.exe upload --config-file .\.arduino\arduino-cli.yaml --fqbn esp32:esp32:esp32c3:CDCOnBoot=cdc --port COM3 --input-dir .\build .
    ```
 
 Replace `COM3` with the detected port. If automatic upload fails, hold `BOOT`
