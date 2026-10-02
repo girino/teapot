@@ -1,0 +1,4 @@
+.arduino/
+.tools/
+wifi_secrets.h
+build/
