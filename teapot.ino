@@ -16,10 +16,10 @@ const char* teapot = R"TEAPOT(
      ;                  ;
      |                  |
      |                  |
-jgs   '.__          __.'
+      '.__          __.'
           ``""""""``
 
-🫖 I'm a teapot 🫖
+      🫖 I'm a teapot 🫖
 )TEAPOT";
 
 void serveTeapot() {
