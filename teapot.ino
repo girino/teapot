@@ -5,8 +5,25 @@
 
 WebServer server(80);
 
+const char* teapot = R"TEAPOT(
+   (         ____
+    )    .;'`    `';,
+   (    //          \\
+    ,_ ||  _..-n-.._ ||
+   (c)\||-"'-.....-"-;|
+    \  ;'             Y
+     \_/`              \
+     ;                  ;
+     |                  |
+     |                  |
+jgs   '.__          __.'
+          ``""""""``
+
+🫖 I'm a teapot 🫖
+)TEAPOT";
+
 void serveTeapot() {
-  server.send(418, "text/plain; charset=utf-8", "I'm a teapot\n");
+  server.send(418, "text/plain; charset=utf-8", teapot);
 }
 
 void onWiFiDisconnected(arduino_event_id_t, arduino_event_info_t info) {
