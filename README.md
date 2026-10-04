@@ -26,7 +26,7 @@ The supported hardware target is an ESP32-C3 SuperMini connected over USB-C.
 3. Compile for the ESP32-C3 with USB serial enabled:
 
    ```powershell
-   .\.tools\arduino-cli\arduino-cli.exe compile --config-file .\.arduino\arduino-cli.yaml --fqbn esp32:esp32:esp32c3:CDCOnBoot=cdc --output-dir .\build .
+   .\.tools\arduino-cli\arduino-cli.exe compile --config-file .\.arduino\arduino-cli.yaml --fqbn esp32:esp32:esp32c3:CDCOnBoot=cdc --build-path .\build .
    ```
 
 4. Find the serial port and upload:

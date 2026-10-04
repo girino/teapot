@@ -26,7 +26,7 @@ const char* teapot = R"TEAPOT(
 
 Copyright (c) 2026 Girino Vey.
 Project: https://github.com/girino/teapot
-License: https://github.com/girino/teapot/blob/main/LICENSE
+License: https://github.com/girino/teapot/blob/master/LICENSE
 )TEAPOT";
 
 void serveTeapot() {
