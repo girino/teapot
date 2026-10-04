@@ -1,6 +1,5 @@
 .arduino/
 .tools/
 wifi_secrets.h
-pico_w/wifi_secrets.py
 build/
 .playwright-mcp/

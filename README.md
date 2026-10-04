@@ -39,16 +39,6 @@ The supported hardware target is an ESP32-C3 SuperMini connected over USB-C.
 Replace `COM3` with the detected port. If upload does not start automatically,
 hold `BOOT`, start the upload, and release it once the connection begins.
 
-## Raspberry Pi Pico W
-
-`pico_w/main.py` is a MicroPython implementation for a functional Pico W.
-Copy `pico_w/wifi_secrets.py.example` to `pico_w/wifi_secrets.py`, add local
-Wi-Fi credentials, then upload both files to the board filesystem.
-
-The Pico W currently tested in this project cannot initialize its CYW43 Wi-Fi
-radio, even with the official MicroPython Pico W UF2. Use the ESP32-C3 target
-unless a working Pico W is available.
-
 ## Test
 
 Read the ESP32 serial output at 115200 baud to obtain its DHCP address, then
