@@ -1,3 +1,6 @@
+# Copyright (c) 2026 Girino Vey.
+# Licensed under the Girino Anarchist License: https://license.girino.org
+
 import network
 import rp2
 import socket
@@ -19,7 +22,11 @@ BODY = """\
       '.__          __.'
           ``\"\"\"\"\"\"``
 
-      🫖 I'm a teapot 🫖
+       🫖 I'm a teapot 🫖
+
+Copyright (c) 2026 Girino Vey.
+Project: https://github.com/girino/teapot
+License: https://github.com/girino/teapot/blob/main/LICENSE
 """.encode("utf-8")
 
 RESPONSE = (
